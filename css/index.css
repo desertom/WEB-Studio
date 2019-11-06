@@ -1,4 +1,84 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+:root {
+    font-family: 'Exo 2', sans-serif;
     color: #545454;
+    --main-color: #545454;
 }
+
+body {
+    background: #0d9ab3;
+}
+
+h1, h2, h3, p, div, nav, header, section, body {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 5vh;
+    margin: 18px;
+    min-height: 85vh;
+}
+
+header nav .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: bold;
+    background: #0d9ab3;
+    padding: 10px 12px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+header nav .menu a:hover {
+    color: white;
+}
+
+header nav .menu a:active {
+    background: var(--main-color);
+}
+
+header img#header-img  {
+    display: none;
+}
+
+header .header-welcome-text {
+    text-align: center;
+    margin: 50px 10px ;
+}
+
+header #button-discover {
+    background: #0d9ab3;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--main-color);
+    padding: 10px 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+header #button-discover:hover {
+    color:white;
+}
+
+header #button-discover:active {
+    background: var(--main-color)
+}
+
+

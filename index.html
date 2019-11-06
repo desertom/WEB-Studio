@@ -9,53 +9,71 @@
 </head>
 <body>
     <header>
-        <div class="logo"></div>
-        <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#samples">Samples</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        </nav>
-        <h1>Welcome</h1>
-        <h2>To the our web studio</h2>
-        <img src="img/header-img-computer.jpg" alt="Computer">
-        <a href="#about">Discover</a>
+        <div class="card">
+            <nav>
+                <div class="logo">
+                    <img src="img/logo.png" alt="WebLaboratory" width="150px">
+                </div>
+                <ul class="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#samples">Samples</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-welcome-text">
+                <h1>Welcome</h1>
+                <h2>To the our web studio</h2>
+            </div>
+            <img id="header-img" src="img/header-img-computer.jpg" alt="Computer">
+            <a href="#about" id="button-discover">Discover</a>
+        </div>
     </header>
     <section class="about" id="about">
-        <h1>About</h1>
-        <div class=""><h2>Fast work</h2></div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
-         Nihil itaque eveniet facere asperiores!<br>
-          Laboriosam rem autem nostrum nihil.</p>
-        <div class=""><h2>Hotest designs</h2></div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
-         Nihil itaque eveniet facere asperiores!<br>
-          Laboriosam rem autem nostrum nihil.</p>
-        <div class=""><h2>The best usability</h2></div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
-         Nihil itaque eveniet facere asperiores!<br>
-          Laboriosam rem autem nostrum nihil.</p>
+        <div class="card">
+            <h2>About</h2>
+            <div class="">
+                <h3>Fast work</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Nihil itaque eveniet facere asperiores!<br>
+                Laboriosam rem autem nostrum nihil.</p>
+            </div>
+            <div class="">
+                <h3>Hotest designs</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Nihil itaque eveniet facere asperiores!<br>
+                Laboriosam rem autem nostrum nihil.</p>
+            </div>
+            <div class="">
+                <h3>The best usability</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Nihil itaque eveniet facere asperiores!<br>
+                Laboriosam rem autem nostrum nihil.</p>
+            </div>
+        </div>
     </section>
     <section class="Samples" id="samples">
-        <h1>Samples</h1>
+        <div class="card">
+            <h2>Samples</h2>
+        </div>
     </section>
-    <section>
-        <h1>Contact</h1>
-        <form action="" method="POST">
-            <input type="email" name="email" placeholder="Email"><br>
-            <input type="text" name="subject" placeholder="Subject"><br>
-            <textarea name="message" maxlength="50" placeholder="Message" required></textarea><br>
-            <input type="submit" value="Send">
-        </form>
-        <div class="social-networks">
-            <a href=""><img src="img/icon-facebook.png" alt="Facebook"></a>
-        </div>
-        <div class="social-networks">
-            <a href=""><img src="img/icon-twitter.png" alt="Twitter"></a>
-        </div>
-        <div class="social-networks">
-            <a href=""><img src="img/icon-instagram.png" alt="Instagram"></a>
+    <section id="contact">
+        <div class="card">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/xdoonaep" method="POST">
+                <input type="email" name="email" placeholder="Email"><br>
+                <input type="text" name="subject" placeholder="Subject"><br>
+                <textarea name="message" maxlength="50" placeholder="Message" required></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+            <div class="social-networks">
+                <a href=""><img src="img/icon-facebook.png" alt="Facebook"></a>
+            </div>
+            <div class="social-networks">
+                <a href=""><img src="img/icon-twitter.png" alt="Twitter"></a>
+            </div>
+            <div class="social-networks">
+                <a href=""><img src="img/icon-instagram.png" alt="Instagram"></a>
+            </div>
         </div>
     </section>
 </body>
