@@ -71,6 +71,7 @@ header #button-discover {
     border-radius: 5px;
     display: flex;
     align-items: center;
+    max-width: 70px;
 }
 
 header #button-discover:hover {
