@@ -15,7 +15,7 @@ body {
     background: #0d9ab3;
 }
 
-h1, h2, h3, p, div, nav, header, section, body {
+h1, h2, h3, p, div, nav, header, section {
     margin: 0;
     padding: 0;
 }
@@ -103,8 +103,12 @@ header .button-discover {
 }
 
 @media (min-width: 768px) {
+    .card {
+        min-height: 585px;
+    }
+
     header nav div.logo img{
-        max-width: 20vh;
+        max-width: 150px;
     }
 
     header nav {
@@ -161,13 +165,28 @@ section.about div.about-item {
     max-width: 100%;
 }
 
+.arrow-down {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .arrow-down {
+        display: flex;
+        justify-content: center;
+    }
+
+    .arrow-down img {
+        max-width: 50px;
+    }
+}
+
 @media (min-width: 768px) {
     section.about .about-content {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         justify-items: center;
-        min-height: 80vh;
+        min-height: 180px;
     }
 
     section.about article {
@@ -230,8 +249,18 @@ section#contact form input[type=submit] {
     border-radius: 5px;
     padding: 10px 25px;
     font-family: 'Exo 2', sans-serif;
+    color: white;
     font-weight: bold;
     font-size: 15px;
+}
+
+section#contact form input[type=submit]:hover {
+    color: black;
+}
+
+section#contact form input[type=submit]:active {
+    background-color: var(--main-color);
+
 }
 
 section#contact .social-networks {
