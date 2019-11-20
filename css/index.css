@@ -8,6 +8,10 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: auto;
     background: #0d9ab3;
 }
 
@@ -34,7 +38,7 @@ header nav div.logo {
 }
 
 header nav div.logo img {
-    max-width: 100px;
+    max-width: 15vh;
 }
 
  header nav .menu {
@@ -47,7 +51,7 @@ header nav div.logo img {
 header nav .menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--main-color);
+    color: white;
     font-size: 13px;
     font-weight: bold;
     background: #0d9ab3;
@@ -57,7 +61,7 @@ header nav .menu a {
 }
 
 header nav .menu a:hover {
-    color: white;
+    color: black;
 }
 
 header nav .menu a:active {
@@ -77,16 +81,16 @@ header .button-discover a {
     text-decoration: none;
     font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-    color: var(--main-color);
+    color: white;
     padding: 10px 25px;
     border-radius: 5px;
     max-width: 70px;
 }
 
 header .button-discover a:hover {
-    color:white;
+    color: black;
 }
 
 header .button-discover a:active {
@@ -99,14 +103,18 @@ header .button-discover {
 }
 
 @media (min-width: 768px) {
-    header nav .logo img{
-        max-width: 500px;
+    header nav div.logo img{
+        max-width: 20vh;
     }
 
     header nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    header nav .menu li {
+        min-width: 10vh;
     }
 
     header nav .menu a {
@@ -158,7 +166,8 @@ section.about div.about-item {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        min-height: 500px;
+        justify-items: center;
+        min-height: 80vh;
     }
 
     section.about article {
@@ -176,7 +185,7 @@ section.about div.about-item {
     }
 
     section.about .about-icons img {
-        max-width: 150px;
+        max-width: 100px;
     }
 
     section.about article .about-item {
@@ -199,6 +208,8 @@ section#contact form input[type=email], input[type=text] {
     padding: 7px;
     width: 100%;
     max-width: 400px;
+    margin: 2px;
+    font-family: 'Exo 2', sans-serif;
 }
 
 section#contact form textarea {
@@ -209,6 +220,8 @@ section#contact form textarea {
     height: 150px;
     width: 100%;
     max-width: 400px;
+    margin: 2px;
+    font-family: 'Exo 2', sans-serif;
 }
 
 section#contact form input[type=submit] {
