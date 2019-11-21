@@ -104,7 +104,7 @@ header .button-discover {
 
 @media (min-width: 768px) {
     .card {
-        min-height: 585px;
+        min-height: 555px;
     }
 
     header nav div.logo img{
@@ -211,6 +211,49 @@ section.about div.about-item {
         max-width: 300px;
         max-height: 300px;
         margin: 10px;
+    }
+}
+
+.samples-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.samples-content .samples-item {
+    margin: 5px;
+}
+
+.samples-content .samples-item img:hover {
+    opacity: 0.3;
+}
+
+.samples-content .samples-item img {
+    max-height: 120px;
+    max-width: 250px;
+    border: 3px solid var(--main-color);
+    border-radius: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .samples-content .samples-item img {
+        max-height: 150px;
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .samples-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .samples-content .samples-item img {
+        max-height: 250px;
+        max-width: 350px;
     }
 }
 
