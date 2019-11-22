@@ -65,7 +65,7 @@ header nav .menu a:hover {
 }
 
 header nav .menu a:active {
-    background: var(--main-color);
+    background-color: var(--main-color);
 }
 
 header img#header-img  {
@@ -94,7 +94,7 @@ header .button-discover a:hover {
 }
 
 header .button-discover a:active {
-    background: var(--main-color)
+    background-color: var(--main-color)
 }
 
 header .button-discover {
